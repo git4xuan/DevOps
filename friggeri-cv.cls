@@ -141,7 +141,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 %}
 
 \newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
+\def\@sectioncolor#1#2#3#4{%
   {%
     \color{%
       \ifcase\value{colorCounter}%
@@ -151,7 +151,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
         pblue\or%
         pblue\else%
         pblue\fi%
-    } #1#2#3%
+    } #1#2#3#4%
   }%
   \stepcounter{colorCounter}%
 }
